@@ -1,0 +1,5 @@
+coverage_service: coveralls
+xcodeproj: rgbycch-ios.xcodeproj
+source_directory: rgbycch-ios
+ignore:
+  - rgbycch-iosTests/*

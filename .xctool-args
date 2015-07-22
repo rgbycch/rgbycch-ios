@@ -1,0 +1,7 @@
+[
+  "-workspace", "rgbycch-ios.xcworkspace",
+  "-scheme", "rgbycch-ios",
+  "-configuration", "Debug",
+  "-sdk", "iphonesimulator",
+  "-arch", "i386"
+]
