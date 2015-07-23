@@ -4,6 +4,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 inhibit_all_warnings!
 
-xcodeproj 'coachapp.xcodeproj'
+xcodeproj 'rgbycch-ios.xcodeproj'
 
 pod 'GoogleAnalytics-iOS-SDK', '3.10'
