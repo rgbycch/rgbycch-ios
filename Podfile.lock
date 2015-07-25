@@ -1,0 +1,14 @@
+PODS:
+  - rgbycch_swift_api (0.1.0)
+
+DEPENDENCIES:
+  - rgbycch_swift_api (from `rgbycch_swift_api`)
+
+EXTERNAL SOURCES:
+  rgbycch_swift_api:
+    :path: rgbycch_swift_api
+
+SPEC CHECKSUMS:
+  rgbycch_swift_api: eebaa89ff7dda4abfdfbab204a6d52380924aa49
+
+COCOAPODS: 0.38.1

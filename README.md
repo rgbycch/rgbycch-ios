@@ -8,7 +8,7 @@ iOS app for the rgbycch service.
 # Getting Started
 To run and build a version of the application, you'll need the latest versions of [Xcode](https://developer.apple.com/xcode/) and [cocoapods](https://cocoapods.org) installed on your machine. Once you have those two prerequisites, execute the following:
 
-    git clone https://github.com/rgbycch/rgbycch-ios.git
+    git clone https://github.com/rgbycch/rgbycch-ios.git --recursive
     pod install
     open rgbycch-ios.xcworkspace
 

@@ -22,6 +22,8 @@
 
 import UIKit
 
+import rgbycch_swift_api
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

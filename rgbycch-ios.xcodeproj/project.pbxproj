@@ -16,7 +16,7 @@
 		145DD6A71B602CE6003556C4 /* rgbycch_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145DD6A61B602CE6003556C4 /* rgbycch_iosTests.swift */; };
 		145DD6B41B602DC0003556C4 /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145DD6B21B602DC0003556C4 /* FieldView.swift */; };
 		145DD6B51B602DC0003556C4 /* GameRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145DD6B31B602DC0003556C4 /* GameRecordViewController.swift */; };
-		D039D128949209C258D1FD6E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65CBD37815EBFD77AC131A67 /* libPods.a */; };
+		156CB68093956D4A9C3E8669 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA73D7C3DBBFDC1ED62C301 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,7 @@
 		145DD6B31B602DC0003556C4 /* GameRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameRecordViewController.swift; sourceTree = "<group>"; };
 		3FD90F08CB0C80A92833F70A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		544CB4F7E15E8C694ACB1746 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		65CBD37815EBFD77AC131A67 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FA73D7C3DBBFDC1ED62C301 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D039D128949209C258D1FD6E /* libPods.a in Frameworks */,
+				156CB68093956D4A9C3E8669 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +131,7 @@
 		1F63EB5C6A8AC308B6690C31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				65CBD37815EBFD77AC131A67 /* libPods.a */,
+				7FA73D7C3DBBFDC1ED62C301 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,6 +157,7 @@
 				145DD6861B602CE6003556C4 /* Frameworks */,
 				145DD6871B602CE6003556C4 /* Resources */,
 				4A5F9593338BD77F0C10C537 /* Copy Pods Resources */,
+				DED3E3687C0717B4A4993167 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,6 +272,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DED3E3687C0717B4A4993167 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
