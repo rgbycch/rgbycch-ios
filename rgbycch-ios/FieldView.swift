@@ -43,7 +43,7 @@ import UIKit
         xibSetup()
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         // 1. setup any properties here
 
         // 2. call super.init(coder:)
@@ -60,7 +60,7 @@ import UIKit
         view.frame = bounds
 
         // Make the view stretch with containing view
-        view.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
+        view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
 
         // Adding custom subview on top of our view (over any custom drawing > see note below)
         addSubview(view)
