@@ -6,11 +6,8 @@ before_install:
   - git submodule add https://github.com/rgbycch/rgbycch_swift_api.git
   - git submodule sync
   - git submodule update --init --recursive
-  # - brew update
-  # - brew upgrade xctool
   - gem install cocoapods
 install:
   - pod install
   - bundle install --without=documentation --path ../travis_bundle_dir
 script: bundle exec fastlane test
-after_success: bundle exec slather
