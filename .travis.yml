@@ -7,7 +7,7 @@ before_install:
   - git submodule sync
   - git submodule update --init --recursive
   # - brew update
-  - brew upgrade xctool
+  # - brew upgrade xctool
   - gem install cocoapods
 install:
   - pod install
