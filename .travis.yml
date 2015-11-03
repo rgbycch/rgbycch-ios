@@ -6,7 +6,7 @@ before_install:
   - git submodule add https://github.com/rgbycch/rgbycch_swift_api.git
   - git submodule sync
   - git submodule update --init --recursive
-  - brew update
+  # - brew update
   - brew upgrade xctool
   - gem install cocoapods
 install:
